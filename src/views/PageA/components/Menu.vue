@@ -8,7 +8,7 @@ const menus = [
 
 <template>
   <div>
-    <router-link class="text-3xl ml-[64px]" v-for="(menu, index) in menus" :to="menu.path">{{ menu.label }}</router-link>
+    <router-link class="text-[1.67vw] ml-[3.33vw]" v-for="(menu, index) in menus" :to="menu.path">{{ menu.label }}</router-link>
   </div>
 </template>
 

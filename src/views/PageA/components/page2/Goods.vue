@@ -1,4 +1,6 @@
 <script setup lang="ts" name="Goods">
+import MyButton from '@/views/PageA/components/Button.vue'
+
 const props = defineProps<{
   data: {
     oneTitle: string
@@ -21,7 +23,9 @@ const bgUrl = computed(() => `url("${props.data.pic}")`)
     <div>
       <div class="text-DINPro mb-[0.5vw] font-bold text-[1.875vw]">Price:£{{ data.price }}</div>
       <div class="text-[1.25vw] mb-[1.46vw] whitespace-pre-wrap">{{ data.introduction }}</div>
-      <div class="text-[1.25vw] mx-auto w-[10.41vw] h-[2.08vw] text-center leading-[2.08vw] border border-[#fff] rounded-full">View Details</div>
+      <my-button class="mx-auto">
+        View Details
+      </my-button>
     </div>
   </div>
 </template>

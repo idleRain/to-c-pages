@@ -18,7 +18,7 @@ const abc = (...args: any[]) => {
 </script>
 
 <template>
-  <div class="relative bg-[url('@/assets/images/1.png')] bg-top bg-no-repeat">
+  <div class="relative my-bg bg-[url('@/assets/images/1.png')] bg-no-repeat">
     <my-header>
       <template #left>
         <svg-icon name="logo" width="35" height="43"/>
@@ -40,4 +40,8 @@ const abc = (...args: any[]) => {
 </template>
 
 <style scoped>
+.my-bg {
+  background-size: 100%;
+  background-position: top;
+}
 </style>
